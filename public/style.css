@@ -1,0 +1,383 @@
+     html, body {
+        height: 100%;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        background-size: cover;
+        background-image: url("https://previews.123rf.com/images/thekaikoro/thekaikoro1611/thekaikoro161100152/68889769-abstract-background-light-blue-curve-and-wave-element-vector-illustration.jpg");
+      /*background-image: linear-gradient(to bottom right, #edebff , #faebff);*/
+    }
+      body { font: 13px Helvetica, Arial; color: #f9faf9;}
+      #inputName { 
+        width: 250px;
+        margin-bottom: 10px;
+        padding-top: 8%;
+      
+
+      }
+      h3{
+        color: goldenrod
+      }
+      #chatbox { 
+         margin-top: 20px;
+         /*padding: 3px;*/
+         padding-right: 10px;
+         padding-left: 10px;
+        width: 100%;
+
+      
+       }
+      #chatbox input { 
+        padding: 15px;
+
+        /*margin-right: 15px;*/
+        margin: 8px;
+        width: 97%;
+        background-color: white;
+        font-size: 15px;
+        border-radius: 25px;
+        margin-bottom: 10px;
+        /*box-shadow: 0px 5px 5px lightgrey;*/
+       }
+        input:focus { 
+          outline: none;
+         
+        }
+
+        ::placeholder {
+          color:#50b6de; 
+        }
+
+
+
+ 
+      #messages { 
+        list-style-type: none; 
+        margin: 0; 
+        padding: 0; 
+      }
+
+      #messages li { 
+        padding: 5px 10px;
+      }
+
+      #messages li:nth-child(odd) { 
+        background: rgb(238, 238, 238); 
+      }
+
+      #messages { 
+        margin-bottom: 40px
+
+      }
+      #m {         
+        border:2px solid #50a5de;
+        color:  #50a5de;
+      
+      box-shadow: 0px 3px 40px #b8e4f5;
+      }
+
+      #typing {
+        color:rgb(182, 226, 243);
+        margin-left: 15px;
+        margin-right:10%;
+      }
+     
+
+      
+
+      
+
+      #close {
+        float: right;
+        font-size: 18px;
+        padding: 10px;
+      }
+
+      #userId {
+        display: none;
+      }
+
+   
+      .btn {
+        width: 100%;
+      }
+
+      #chatbox2 {
+        top: 400px;
+        width: 100%;
+      }
+      .container {
+        width: 100%;
+        height: 100%;
+        padding: 0;
+        display:none;
+      }
+      .row{
+        height: 92%;
+        padding-right: 0;
+        margin-right: 0;
+        width: 100%;
+      }
+      
+      #messagesHolder {
+        margin-left: 0;
+        margin-right: 0;
+        margin-top: 0;
+        height: 87%;
+        overflow: auto;
+      }
+      #header {
+        height: 60px;
+        position: fixed;
+        z-index: 9999;
+        background-color: rgb(7, 141, 252);
+        width: 100%;
+        margin: 0;
+        overflow: hidden;
+        background-color: rgb(7, 141, 252);
+        box-shadow: 0px 7px 10px #8ec8f0;
+        border-bottom:2px solid #5076de;
+      }
+
+      #logout {
+        margin: 5px;
+        border-radius: 25px;
+        padding: 4px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        width: 50px;
+        border-color: #5076de;
+        color: #023cfa;
+        float: right;
+        font-size: 12px;
+        overflow: hidden;
+      }
+
+      #username {
+        outline: none;
+        padding: 20px;
+        font-size: 17px;
+        /*border-radius: 34px;*/
+        box-shadow: 0px 3px 40px #b8e4f5;
+         border:2px solid #5076de;
+          color:  #023cfa;
+      }
+
+        #username::placeholder {
+          color:#50b6de; 
+        }
+
+
+      #chatmateName {
+        padding: 10px;
+        margin-top: 0;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        margin-bottom: 0;
+        background-color:  #69a5f5;
+      }
+
+     
+      #pmholder {
+        height: 310px;
+        overflow: auto;
+        padding: 10px;
+        padding-top: 0;
+        width: 100%;
+        padding-bottom: 20px;
+        margin-top: 0;
+
+      }
+
+      #m2 {
+        border-radius: 0;
+        width: 100%;
+        padding: 10px;
+        border:0;
+        background-color: #cad8f3;
+        border-top: 1px solid #505ede;
+      }
+
+      
+
+      .newMes {
+        background-color: rgb(211, 211, 211);
+        padding-right: 10px;
+        padding-top: 1px;
+        padding-bottom: 1px;
+        padding-left: 10px;
+        margin-right: 10px;
+        margin-left: 10px;
+        margin-bottom: 0;
+        margin-top: 0;
+        border-radius: 25px;
+        width: -webkit-fit-content;
+        height: -webkit-fit-content;
+        width: -moz-fit-content;
+        height: -moz-fit-content;
+        float: right;
+
+        text-align: center;
+      }
+
+      #myMess {
+        float: right;
+        margin-left: 10%;
+        background-color: #86c7f1;
+      }
+
+      #othersMess {
+        float: left;
+        margin-right:10%;
+        background-color: goldenrod;
+      }
+
+
+
+      #mesDivHolder {
+        padding-right: 0;
+        margin-top:10px;
+        height: 33px;
+      }
+
+      #mm {
+        float: right;
+        margin-left: 10%;
+         background-color: #bfdff5;
+      }
+
+      #ntm {
+         float: left;
+        margin-right:10%;
+        background-color: #6297fa;
+      }
+
+      .pmdiv {
+        background-color: lightgrey;
+        margin-right: 5px;
+        margin-left: 5px;
+        margin-bottom: 0;
+        margin-top: 0;
+        border-radius: 25px;
+        width: -webkit-fit-content;
+        height: -webkit-fit-content;
+        width: -moz-fit-content;
+        height: -moz-fit-content;
+        float: right;
+        text-align: center;
+      }
+
+      .pmdivh {
+        padding-right: 0;
+        margin-top:10px;
+        height: 25px;
+      }
+
+      #PM {
+        padding-right: 9px;
+        padding-top: 7px;
+        padding-bottom: 0px;
+        padding-left: 9px;
+      }
+      .typingPM {
+        float: left;
+      }
+
+      .otherUser {
+        width: 100%;
+        margin-left: 0;
+        padding-top: 0px;
+        margin-top: 0;
+        padding-left: 10px;
+        margin-bottom: 0;
+        margin-top: 0;
+        height: 50px;
+        text-align: left;
+        border-top: 2px solid white;
+        background: rgba(178, 191, 247, 0.4);
+
+      }
+
+      #activeUsers {
+        margin: 0;
+      }
+
+      #User {
+        padding-bottom: 10px;
+        padding-top: 10px;
+        margin: 0;
+      }
+
+      .Ouser {
+        width: 100%;
+        padding:10px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        margin-right: 0;
+        background-color: rgba(59, 121, 255, 0.9);
+       /* box-shadow: -5px 5px 5px lightgrey;*/
+      }
+
+      .myname {
+        float: right;
+        margin-right: 20px;
+        margin-top: 14px;
+      }
+
+      #start {
+        width: 62px;
+        padding: 15px;
+        /*border-radius: 30px;*/
+        font-size: 17px;
+         box-shadow: 0px 3px 40px #b8daf5;
+         border:2px solid #508ede;
+        color:  #5071de;
+      }
+
+       #main {
+        height: 100%;
+        padding-bottom: 0px;
+        padding:0px;
+        padding-right: 0;
+        padding-bottom: 0;
+        background: rgba(255, 252, 255, 0.9);
+
+        
+
+      }
+
+      #active {
+        height: 100%;
+        border-left:1px solid #5065de;
+        overflow: auto;
+        padding: 15px;
+
+        text-align: left;
+        padding-right: 0;
+        margin-right: 0;
+      } 
+
+      #otherConvo{
+        overflow: auto;
+        border-right: 1px solid #5071de;
+        height: 100%;
+        padding-right: 10px;
+        padding-left: 10px;
+      }
+
+      .newChatWindow {
+        margin-top: 40px;
+        background: rgba(249, 250, 252, 0.6);
+        border-radius: 10px;
+        margin: 10px;
+        overflow: auto;
+        height: 400px;
+        border:1px solid #5250de;
+        box-shadow: -5px 5px 5px rgb(115, 178, 241);
+      }
+
+      #mainbody {
+        height: 80%;
+        padding-top: 80px;
+      }
+    
